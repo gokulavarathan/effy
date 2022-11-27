@@ -16,4 +16,4 @@ const companySchema = new mongoose.Schema(
 
 companySchema.index({ companyName: 1 });
 
-module.exports = mongoose.model("createCompany",companySchema, "testingschema");
+module.exports = mongoose.model("createCompany",companySchema, "companyschema");

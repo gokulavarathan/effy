@@ -1,0 +1,163 @@
+[{
+  "_id": {
+    "$oid": "6382fea56e7f4a3808d919a6"
+  },
+  "firstName": "Hyper",
+  "lastName": "text",
+  "emailId": "hypertext@gmail.com",
+  "activeStatus": false,
+  "designation": "structure",
+  "companyDetails": null,
+  "dob": "2022-05-02",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529253197"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382fed46e7f4a3808d919a9"
+  },
+  "firstName": "java",
+  "lastName": "script",
+  "emailId": "javascript@gmail.com",
+  "activeStatus": false,
+  "designation": "functionality",
+  "companyDetails": null,
+  "dob": "2022-05-01",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529300263"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382fef96e7f4a3808d919ac"
+  },
+  "firstName": "react",
+  "lastName": "jsx",
+  "emailId": "reactjsx@gmail.com",
+  "activeStatus": true,
+  "designation": "library",
+  "companyDetails": null,
+  "dob": "2019-06-03",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529337800"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ff176e7f4a3808d919af"
+  },
+  "firstName": "angular",
+  "lastName": "ts",
+  "emailId": "angularts@gmail.com",
+  "activeStatus": true,
+  "designation": "framework",
+  "companyDetails": null,
+  "dob": "2019-01-04",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529367120"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ff396e7f4a3808d919b2"
+  },
+  "firstName": "node",
+  "lastName": "js",
+  "emailId": "nodejs@gmail.com",
+  "activeStatus": true,
+  "designation": "server",
+  "companyDetails": null,
+  "dob": "2018-01-18",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529401472"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ff546e7f4a3808d919b5"
+  },
+  "firstName": "go",
+  "lastName": "lang",
+  "emailId": "golang@gmail.com",
+  "activeStatus": true,
+  "designation": "server",
+  "companyDetails": null,
+  "dob": "2010-02-16",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529428478"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ff766e7f4a3808d919b8"
+  },
+  "firstName": "vue",
+  "lastName": "js",
+  "emailId": "vuejs@gmail.com",
+  "activeStatus": true,
+  "designation": "frontend",
+  "companyDetails": null,
+  "dob": "2014-02-11",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529462758"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ff976e7f4a3808d919bb"
+  },
+  "firstName": "c",
+  "lastName": "++",
+  "emailId": "cplus@gmail.com",
+  "activeStatus": true,
+  "designation": "oops",
+  "companyDetails": null,
+  "dob": "2015-06-15",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529495558"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382ffb86e7f4a3808d919be"
+  },
+  "firstName": "mongo",
+  "lastName": "db",
+  "emailId": "mongodb@gmail.com",
+  "activeStatus": true,
+  "designation": "database",
+  "companyDetails": null,
+  "dob": "2016-06-15",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529528574"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "638301896e7f4a3808d919cd"
+  },
+  "firstName": "Oracle",
+  "lastName": "db",
+  "emailId": "oracledb@gmail.com",
+  "activeStatus": true,
+  "designation": "database",
+  "companyDetails": {
+    "$oid": "638301186e7f4a3808d919c3"
+  },
+  "dob": "2017-02-15",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529993168"
+    }
+  }
+}]

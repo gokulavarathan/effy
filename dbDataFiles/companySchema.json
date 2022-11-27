@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "6382fd846e7f4a3808d9198e"
+  },
+  "companyName": "Hcl tech",
+  "companyAddress": "Sterling Technopolis, 4/293 Old Mahabalipuram Road, SH 49A, Perungudi, Chennai, Tamil Nadu 600096",
+  "cityName": "Chennai",
+  "postalCode": 600096,
+  "countryName": "india",
+  "lat": 12.964029,
+  "lan": 80.24362889999999,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669528964722"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382fdb56e7f4a3808d91991"
+  },
+  "companyName": "Mirror Technologies Pvt Ltd",
+  "companyAddress": " No:79 ,south sivan koil street, near 100 ft road, Vadapalani, Chennai, Tamil Nadu 600026",
+  "cityName": "Chennai",
+  "postalCode": 600026,
+  "countryName": "india",
+  "lat": 13.0466687,
+  "lan": 80.21080719999999,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529013247"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382fe366e7f4a3808d91995"
+  },
+  "companyName": "Siam Computing",
+  "companyAddress": " No 30, 2nd Floor, 1st Main Rd, above Mera Toy Shop, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020",
+  "cityName": "Chennai",
+  "postalCode": 600020,
+  "countryName": "india",
+  "lat": 12.9975115,
+  "lan": 80.2592404,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529142162"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6382fe5c6e7f4a3808d91998"
+  },
+  "companyName": "Excelanto Cloud Systems Pvt ltd ",
+  "companyAddress": "2nd Floor,B block, Lakshmi Towers No 9, NO 93, Arcot Rd, Kodambakkam, Chennai, Tamil Nadu 600024",
+  "cityName": "Chennai",
+  "postalCode": 600024,
+  "countryName": "india",
+  "lat": 13.0538521,
+  "lan": 80.2303233,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529180545"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "638301186e7f4a3808d919c3"
+  },
+  "companyName": "effy",
+  "companyAddress": "11, MGR Main Rd, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096",
+  "cityName": "Chennai",
+  "postalCode": 600096,
+  "countryName": "india",
+  "lat": 12.9728402,
+  "lan": 80.24442739999999,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669529880788"
+    }
+  }
+}]
