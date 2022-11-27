@@ -1,0 +1,17 @@
+
+
+.content {
+    margin-left: 293px;
+    padding-top: 20px;
+
+}
+
+.hover:hover{
+cursor: pointer;
+}
+.cntBtn{
+    float: right;
+}
+.content h2{
+    display: inline;
+}
