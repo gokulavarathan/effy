@@ -58,7 +58,6 @@ exports.singledata=((req,res)=>{
 
 exports.update=(async (req,res)=>{
     try {
-       
         var value = req.body
         await company.find({ _id: mongoose.Types.ObjectId(req.params.id) }, (err, data) => {
             if (!err) {

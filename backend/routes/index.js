@@ -13,7 +13,6 @@ router.get('/testroute', function(req, res, next) {
 
 
 
-//add location https://maps.google.com/maps/api/geocode/json?address=${location}&sensor=false&key=AIzaSyBp68RmeQVmhQRdujiPMyfMonea_C483PY
 router.post("/", validation.postValidation,companyController.company)
 
 router.get("/list", companyController.listCompany)

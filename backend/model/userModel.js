@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const userSchema = new mongoose.Schema(
   {
     firstName: { type: String },
-    LastName: { type: String },
+    lastName: { type: String },
     // "userId": { type: Number, index: true, require: true },
     emailId: { type: String, index: true },
-    activeStatus: { type: Boolean },
+    activeStatus: { type: Boolean, default:true },
     designation: { type: String },
     companyDetails: { type: mongoose.Schema.Types.ObjectId, default: null },
     dob: { type: String },

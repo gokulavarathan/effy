@@ -7,7 +7,6 @@ exports.postValidation = (req, res, next) => {
 
     try {
         let path = req.route.path;
-        console.log(path,"path")
         let data = req.body;
 
         if (path == '/') {
@@ -17,12 +16,22 @@ exports.postValidation = (req, res, next) => {
             .withRequired('lat', validator.isNumber({ regex: emptycheck, message: "Please provide the Lattitude" }))
             .withRequired('lan', validator.isNumber({ regex: emptycheck, message: "Please provide the Longitude" }))
             
+            .withRequired('cityName', validator.isString({ regex: emptycheck, message: "Please provide the cityName" }))
+            .withRequired('postalCode', validator.isString({ regex: emptycheck, message: "Please provide the postalCode" }))
+            .withRequired('countryName', validator.isString({ regex: emptycheck, message: "Please provide the countryName" }))
+            
+
         }else if(path == '/update/:id'){
             check = validator.isObject()
             .withRequired('companyName', validator.isString({ regex: emptycheck, message: "Please provide the companyName" }))
             .withRequired('companyAddress', validator.isString({ regex: emptycheck, message: "Please provide the companyAddress" }))
             .withRequired('lat', validator.isNumber({ regex: emptycheck, message: "Please provide the Lattitude" }))
             .withRequired('lan', validator.isNumber({ regex: emptycheck, message: "Please provide the Longitude" }))
+        
+            .withRequired('cityName', validator.isString({ regex: emptycheck, message: "Please provide the cityName" }))
+            .withRequired('postalCode', validator.isString({ regex: emptycheck, message: "Please provide the postalCode" }))
+            .withRequired('countryName', validator.isString({ regex: emptycheck, message: "Please provide the countryName" }))
+            
         }else if(path == '/addUser/:id'){
             check = validator.isObject()
             .withRequired('userId', validator.isString({ regex: emptycheck, message: "Please provide the user Id " }))
@@ -54,7 +63,6 @@ exports.postValidation = (req, res, next) => {
             }
         })
     } catch (e) {
-        console.log("Error catched in validation", e);
         res.json({ "status": false, "message": "Oops! Something went wrong. Please try again later" })
     }
 }

@@ -4,7 +4,9 @@ const companySchema = new mongoose.Schema(
   {
     companyName: { type: String, require: true, index: true },
     companyAddress: { type: String, require: true },
-    // "companyId":{ type:Number, index: true,require:true },
+    cityName: { type: String, require: true },
+    postalCode: { type: Number, require: true },
+    countryName: { type: String, require: true },
     lat: { type: Number, require: true },
     lan: { type: Number, require: true },
     createdAt: { type: Date, default: Date.now }

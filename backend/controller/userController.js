@@ -45,13 +45,13 @@ exports.singledata=((req, res) => {
         user.find({ _id: mongoose.Types.ObjectId(req.params.id) }, (err, data) => {
 
             if (data) {
-                company.find({ _id: mongoose.Types.ObjectId(data.companyDetails) }, (comErr, comData) => {
-                    if (comData) {
+                company.find({ _id: mongoose.Types.ObjectId(data[0].companyDetails) }, (comErr, comData) => {
+                    if (comData) {                        
                         var response = [...data, ...comData]; 
                         res.status(200).send({ status: true, data: response, msg: "Available user list" })
                         
                     } else {
-                        res.status(400).send({ status: false, msg: "Error Occur while fetching comapny data", err: err })
+                        res.status(400).send({ status: false, msg: "Error Occur while fetching comapny data", err: comErr })
                     }
                 })
                 
@@ -71,10 +71,8 @@ exports.update=(async (req, res) => {
         
         var value = req.body
         await user.find({ _id: mongoose.Types.ObjectId(req.params.id) }, (err, data) => {
-            console.log(data, data)
             if (!err) {
                 if (data.length != 0) {
-                    console.log(data,"data")
                     var where = { _id: data[0]._id }
                     
                     user.updateOne(where, value, (error, updated) => {
@@ -108,7 +106,6 @@ exports.delete=(async (req, res) => {
             
             if (!err) {
                 if (data.length != 0) {
-                    console.log(data,"data")
                     var where = { _id: data[0]._id }
                     
                     user.deleteOne(where, (error, updated) => {
@@ -138,10 +135,8 @@ exports.delete=(async (req, res) => {
 exports.deactivate=(async (req, res) => {
     try {
         await user.find({ _id: mongoose.Types.ObjectId(req.params.id) }, (err, data) => {
-            console.log(data, data)
             if (!err) {
                 if (data.length != 0) {
-                    console.log(data,"data")
                     var where = { _id: data[0]._id }
                     user.updateOne(where, {$set:{activeStatus:false}}, (error, updated) => {
                         if (!error) {

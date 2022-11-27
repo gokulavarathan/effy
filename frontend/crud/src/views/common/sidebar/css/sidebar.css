@@ -1,0 +1,44 @@
+.sidebar_menu{
+    width: 250px;
+    height: 100vh;
+    background-color: #3D8BFD;
+    color: black;
+    display: flex;
+    float: left;
+
+    
+}
+
+.sidebarList{
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin-top:50px
+}
+
+.row{
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    flex: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row:hover{
+    background-color: black;
+    cursor: pointer;
+    color:white
+}

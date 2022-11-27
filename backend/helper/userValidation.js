@@ -7,24 +7,21 @@ exports.postValidation = (req, res, next) => {
 
     try {
         let path = req.route.path;
-        console.log(path,"path")
         let data = req.body;
 
         if (path == '/') {
             check = validator.isObject()
             .withRequired('firstName', validator.isString({ regex: emptycheck, message: "Please provide the firstName" }))
-            .withRequired('LastName', validator.isString({ regex: emptycheck, message: "Please provide the LastName" }))
+            .withRequired('lastName', validator.isString({ regex: emptycheck, message: "Please provide the LastName" }))
             .withRequired('emailId', validator.isString({ regex: email, message: "Please provide the email" }))
-            .withRequired('activeStatus', validator.isBoolean({ regex: emptycheck, message: "Please provide the activeStatus" }))
             .withRequired('designation', validator.isString({ regex: emptycheck, message: "Please provide the designation" }))
             .withRequired('dob', validator.isString({ regex: emptycheck, message: "Please provide the dob" }))
         
         }else if(path == '/update/:id'){
             check = validator.isObject()
             .withRequired('firstName', validator.isString({ regex: emptycheck, message: "Please provide the firstName" }))
-            .withRequired('LastName', validator.isString({ regex: emptycheck, message: "Please provide the LastName" }))
+            .withRequired('lastName', validator.isString({ regex: emptycheck, message: "Please provide the LastName" }))
             .withRequired('emailId', validator.isString({ regex: email, message: "Please provide the email" }))
-            .withRequired('activeStatus', validator.isBoolean({ regex: emptycheck, message: "Please provide the activeStatus" }))
             .withRequired('designation', validator.isString({ regex: emptycheck, message: "Please provide the designation" }))
             .withRequired('dob', validator.isString({ regex: emptycheck, message: "Please provide the dob" }))
         
@@ -52,7 +49,6 @@ exports.postValidation = (req, res, next) => {
             }
         })
     } catch (e) {
-        console.log("Error catched in validation", e);
         res.json({ "status": false, "message": "Oops! Something went wrong. Please try again later" })
     }
 }
